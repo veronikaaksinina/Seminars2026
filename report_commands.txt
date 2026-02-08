@@ -1,0 +1,13 @@
+  480  git commit -m "Add disk usage report"
+  481  git push -u origin cleaning
+  483  git add test_file.txt
+  484  git commit -m "Initial commit for test"
+  485  git log --oneline -1 | cut -d ' ' -f1 | head -c 4 > hash_prefix.txt
+  488  git add forgotten.txt
+  489  git commit --amend --no-edit
+  490  git log --oneline -2
+  491  cat > amend.txt << 'EOF'\n1. Изменился ли хеш коммита?\nДа, хеш поменялся.\n\n2. Почему, если сообщение осталось тем же?\nХеш коммита считается не только от сообщения\n\nМы добавили файл forgotten.txt, поэтому содержимое коммита изменилось.\ngit commit --amend не изменяет старый коммит, а создаёт новый с добавленными файлами.\nДаже если сообщение то же, всё остальное другое — значит и хеш другой.\nEOF
+  492  git checkout master
+  493  git add amend.txt
+  494  git commit -m "Add amend.txt with answers about git commit --amend"
+  495  git push origin master

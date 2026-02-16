@@ -1,0 +1,16 @@
+
+$ ./greeter.sh Ivan
+Error: Not enough arguments provided
+
+$ ./greeter.sh Ivan Ivanov
+Error: Not enough arguments provided
+
+$ ./greeter.sh Ivan Ivanov Bio305
+Welcome, Ivan Ivanov from group Bio305!
+
+$ ./greeter.sh Maria Sidorova Bio306
+Welcome, Maria Sidorova from group Bio306!
+
+$ ./greeter.sh Petr Petrov Bio307 ExtraArg
+Welcome, Petr Petrov from group Bio307!
+(лишние аргументы игнорируются)

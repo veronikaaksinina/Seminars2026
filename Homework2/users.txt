@@ -1,0 +1,5 @@
+17:54  up 14 days,  5:31, 2 users, load averages: 2.45 2.22 2.22
+USER       TTY      FROM    LOGIN@  IDLE WHAT
+veronikaak console  -      02Feb26 14days -
+veronikaak s000     -      15:53       - w
+uid=501(veronikaaksinina) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae),701(com.apple.sharepoint.group.1)
